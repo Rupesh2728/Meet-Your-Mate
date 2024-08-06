@@ -1,16 +1,16 @@
 {
-  "name": "chatapplication",
+  "name": "meetyourmate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "install-server": "npm install --prefix server",
-    "install-client": "npm install --prefix client",
+    "install-client": "npm install --prefix Frontend",
     "install": "npm run install-server && npm run install-client",
     "start-server":"npm start --prefix server",
     "watch-server":"npm run watch --prefix server",
-    "start-client":"npm start --prefix client",
-    "watch-client":"npm run watch --prefix client",
+    "start-client":"npm start --prefix Frontend",
+    "watch-client":"npm run watch --prefix Frontend",
     "test": "npm run test --prefix server && npm run test --prefix client",
     "start": "concurrently \"npm start-server\" \"npm start-client\"",
     "watch": "concurrently \"npm watch-server\" \"npm watch-client\""
