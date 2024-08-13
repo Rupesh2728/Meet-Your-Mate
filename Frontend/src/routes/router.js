@@ -2,12 +2,12 @@ import React from 'react'
 import { createBrowserRouter } from 'react-router-dom'
 import App from '../App'
 import RegisterPage from '../pages/RegisterPage'
-import CheckEmailPage from '../pages/CheckEmailPage'
-import CheckPasswordPage from '../pages/CheckPasswordPage'
 import HomePage from '../pages/HomePage'
 import ChatSection from '../components/ChatSection'
 import AuthLayout from '../layouts/AuthLayout'
-import Header from '../layouts/Header'
+import ForgotPassword from '../pages/ForgotPassword'
+import CheckEmailPage from '../pages/Login/CheckEmailPage'
+import CheckPasswordPage from '../pages/Login/CheckPasswordPage'
 
 const router = createBrowserRouter([
 {
@@ -26,6 +26,12 @@ const router = createBrowserRouter([
         path : "password",
         element : <AuthLayout><CheckPasswordPage/></AuthLayout>
     },
+
+    {
+        path : "forgot-password",
+        element : <AuthLayout><ForgotPassword/></AuthLayout>
+    },
+
     {
         path : "",
         element : <HomePage/>,

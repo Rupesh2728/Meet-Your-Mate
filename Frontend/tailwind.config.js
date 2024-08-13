@@ -21,6 +21,10 @@ module.exports = {
       '3xl': '1600px',
     },
 
+    fontFamily: {
+      sans: ['Poppins', 'sans-serif'],
+    },
+
      keyframes: {
       typing: {
         "0%": {
